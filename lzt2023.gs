@@ -50,7 +50,7 @@ function onFormSubmit(e) {
   var userEmail = formResponse.getRespondentEmail();
   var firstName = itemResponses[0].getResponse()
   var surname = itemResponses[1].getResponse()
-  var birthday = itemResponses[3].getResponse()
+  var birthday = itemResponses[2].getResponse()
   var birthdayYear = birthday.split("-")[0]
   var variableSymbol = birthday.replaceAll("-", "")
   var recipientMessage = `${EVENT_NAME} ${firstName} ${surname} ${birthdayYear}`
